@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="proximanova-regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="proximanova-semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+        <array key="simplonmono-medium.ttf">
+            <string>simplonmono-medium</string>
+        </array>
+        <array key="simplonmono-regular.ttf">
+            <string>simplonmono-regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Error Pop Up View Controller Dark-->
+        <scene sceneID="D3J-hr-6vh">
+            <objects>
+                <viewController storyboardIdentifier="ErrorPopUpViewControllerDark" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LQZ-jf-i0C" customClass="ErrorPopUpViewControllerDark" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7tt-Cb-b6I"/>
+                        <viewControllerLayoutGuide type="bottom" id="ofT-58-27H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5xO-cN-DbP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpZ-hQ-CG6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYF-uv-dMs">
+                                <rect key="frame" x="30" y="112.5" width="315" height="242"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsf-Ei-fzp">
+                                        <rect key="frame" x="20" y="54" width="275" height="18"/>
+                                        <fontDescription key="fontDescription" name="simplonmono-medium" family="simplonmono" pointSize="15"/>
+                                        <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THk-hZ-XMo">
+                                        <rect key="frame" x="20" y="82" width="275" height="84"/>
+                                        <string key="text">Something went wrongSomething went wrongSomething went wrongSomething went wrongSomething went wrongSomething went wrongSomething went wrongSomething went wrongSomething went wrongSomething went wrongSomething went wrong</string>
+                                        <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="12"/>
+                                        <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yY3-8c-aKI">
+                                        <rect key="frame" x="157.5" y="191" width="157.5" height="31"/>
+                                        <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="16"/>
+                                        <state key="normal" title="TRY AGAIN">
+                                            <color key="titleColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionCancel:" destination="LQZ-jf-i0C" eventType="touchUpInside" id="NqW-vt-E8i"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkj-nE-6OT">
+                                        <rect key="frame" x="0.0" y="191" width="157.5" height="31"/>
+                                        <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="16"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionOk:" destination="LQZ-jf-i0C" eventType="touchUpInside" id="bUT-Sd-Fbg"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-error" translatesAutoresizingMaskIntoConstraints="NO" id="f1U-5S-Ihy">
+                                        <rect key="frame" x="144.5" y="17" width="26" height="22"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3HK-YE-IeN">
+                                        <rect key="frame" x="0.0" y="237" width="315" height="5"/>
+                                        <color key="backgroundColor" red="0.90588235289999997" green="0.33725490200000002" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="5" id="jsI-JR-IBV"/>
+                                        </constraints>
+                                    </view>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJE-PX-i8O">
+                                        <rect key="frame" x="0.0" y="191" width="315" height="31"/>
+                                        <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="16"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionOk:" destination="LQZ-jf-i0C" eventType="touchUpInside" id="0sc-kU-aHB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.60392156860000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="THk-hZ-XMo" firstAttribute="centerX" secondItem="MYF-uv-dMs" secondAttribute="centerX" id="7ff-ga-hsL"/>
+                                    <constraint firstAttribute="trailing" secondItem="3HK-YE-IeN" secondAttribute="trailing" id="7v8-Y2-wUO"/>
+                                    <constraint firstItem="THk-hZ-XMo" firstAttribute="leading" secondItem="MYF-uv-dMs" secondAttribute="leading" constant="20" id="A5s-hQ-ifa"/>
+                                    <constraint firstItem="3HK-YE-IeN" firstAttribute="leading" secondItem="MYF-uv-dMs" secondAttribute="leading" id="Aph-93-Vhv"/>
+                                    <constraint firstItem="BJE-PX-i8O" firstAttribute="leading" secondItem="wkj-nE-6OT" secondAttribute="leading" id="FgJ-e9-2tF"/>
+                                    <constraint firstItem="wkj-nE-6OT" firstAttribute="centerY" secondItem="yY3-8c-aKI" secondAttribute="centerY" id="Guw-TH-1Gl"/>
+                                    <constraint firstItem="yY3-8c-aKI" firstAttribute="top" secondItem="THk-hZ-XMo" secondAttribute="bottom" constant="25" id="HKV-YE-6mg"/>
+                                    <constraint firstItem="wkj-nE-6OT" firstAttribute="leading" secondItem="MYF-uv-dMs" secondAttribute="leading" id="PcK-Jx-s29"/>
+                                    <constraint firstItem="hsf-Ei-fzp" firstAttribute="top" secondItem="f1U-5S-Ihy" secondAttribute="bottom" constant="15" id="QqS-Z5-aRH"/>
+                                    <constraint firstItem="3HK-YE-IeN" firstAttribute="top" secondItem="yY3-8c-aKI" secondAttribute="bottom" constant="15" id="Wh0-Ac-ARk"/>
+                                    <constraint firstItem="wkj-nE-6OT" firstAttribute="width" secondItem="yY3-8c-aKI" secondAttribute="width" id="WzQ-3d-Xnj"/>
+                                    <constraint firstItem="THk-hZ-XMo" firstAttribute="top" secondItem="hsf-Ei-fzp" secondAttribute="bottom" constant="10" id="ixe-bd-aAt"/>
+                                    <constraint firstItem="BJE-PX-i8O" firstAttribute="bottom" secondItem="wkj-nE-6OT" secondAttribute="bottom" id="lKZ-7Q-VOl"/>
+                                    <constraint firstItem="yY3-8c-aKI" firstAttribute="leading" secondItem="wkj-nE-6OT" secondAttribute="trailing" id="lR6-so-jXT"/>
+                                    <constraint firstItem="BJE-PX-i8O" firstAttribute="trailing" secondItem="yY3-8c-aKI" secondAttribute="trailing" id="noV-3p-fdg"/>
+                                    <constraint firstItem="BJE-PX-i8O" firstAttribute="top" secondItem="wkj-nE-6OT" secondAttribute="top" id="q6a-Tr-tDQ"/>
+                                    <constraint firstItem="f1U-5S-Ihy" firstAttribute="top" secondItem="MYF-uv-dMs" secondAttribute="top" constant="17" id="qQI-1Q-wif"/>
+                                    <constraint firstAttribute="bottom" secondItem="3HK-YE-IeN" secondAttribute="bottom" id="ryz-Oj-Y1K"/>
+                                    <constraint firstItem="hsf-Ei-fzp" firstAttribute="leading" secondItem="MYF-uv-dMs" secondAttribute="leading" constant="20" id="s3b-1w-2KS"/>
+                                    <constraint firstAttribute="trailing" secondItem="yY3-8c-aKI" secondAttribute="trailing" id="vUg-Ys-8e9"/>
+                                    <constraint firstItem="f1U-5S-Ihy" firstAttribute="centerX" secondItem="MYF-uv-dMs" secondAttribute="centerX" id="wAG-Sb-HyB"/>
+                                    <constraint firstItem="hsf-Ei-fzp" firstAttribute="centerX" secondItem="MYF-uv-dMs" secondAttribute="centerX" id="xBh-u2-EnR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="xpZ-hQ-CG6" secondAttribute="trailing" id="2rQ-y1-5Jj"/>
+                            <constraint firstItem="ofT-58-27H" firstAttribute="top" secondItem="xpZ-hQ-CG6" secondAttribute="bottom" id="6av-Pf-c4d"/>
+                            <constraint firstItem="xpZ-hQ-CG6" firstAttribute="top" secondItem="5xO-cN-DbP" secondAttribute="top" id="RCA-wg-Whj"/>
+                            <constraint firstItem="xpZ-hQ-CG6" firstAttribute="leading" secondItem="5xO-cN-DbP" secondAttribute="leading" id="RQM-uj-Bx8"/>
+                            <constraint firstItem="MYF-uv-dMs" firstAttribute="centerX" secondItem="5xO-cN-DbP" secondAttribute="centerX" id="bHM-xC-d4n"/>
+                            <constraint firstAttribute="trailing" secondItem="MYF-uv-dMs" secondAttribute="trailing" constant="30" id="hJ0-5m-lF2"/>
+                            <constraint firstItem="MYF-uv-dMs" firstAttribute="centerY" secondItem="5xO-cN-DbP" secondAttribute="centerY" multiplier="0.7" id="oyg-TA-Cj7"/>
+                            <constraint firstItem="MYF-uv-dMs" firstAttribute="leading" secondItem="5xO-cN-DbP" secondAttribute="leading" constant="30" id="w85-Kf-87d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="yY3-8c-aKI" id="fUK-Db-kJ8"/>
+                        <outlet property="centerOkButton" destination="BJE-PX-i8O" id="bbc-Rl-7EB"/>
+                        <outlet property="messageLabel" destination="THk-hZ-XMo" id="fdP-Rg-4OK"/>
+                        <outlet property="okButton" destination="wkj-nE-6OT" id="fOh-bu-vap"/>
+                        <outlet property="titleLabel" destination="hsf-Ei-fzp" id="UyH-Qe-lvx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="idG-Db-E04" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2.3999999999999999" y="142.57871064467767"/>
+        </scene>
+        <!--Error Pop Up View Controller Light-->
+        <scene sceneID="1f8-Bb-gyI">
+            <objects>
+                <viewController storyboardIdentifier="ErrorPopUpViewControllerLight" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wzy-ge-Ybx" customClass="ErrorPopUpViewControllerLight" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mBj-2N-ola"/>
+                        <viewControllerLayoutGuide type="bottom" id="TPm-8V-4B1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PqG-eE-mfj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Aj-B7-1HY">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mmE-Iw-0ao">
+                                <rect key="frame" x="56.5" y="146" width="262" height="175"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieg-mF-6fQ">
+                                        <rect key="frame" x="140" y="118" width="107" height="42"/>
+                                        <color key="backgroundColor" red="0.21176470589999999" green="0.72549019609999998" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="ETb-0g-67m"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="107" id="UBr-nS-EtE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                        <state key="normal" title="TRY AGAIN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionCancel:" destination="wzy-ge-Ybx" eventType="touchUpInside" id="7DW-Pa-UFC"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oops" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyJ-Yr-ahm">
+                                        <rect key="frame" x="109.5" y="33" width="44" height="21"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                                        <color key="textColor" red="0.99215686274509807" green="0.47450980392156861" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-error-popup" translatesAutoresizingMaskIntoConstraints="NO" id="4zl-qd-Ca8">
+                                        <rect key="frame" x="84.5" y="32.5" width="18" height="18"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOi-zg-3Ig">
+                                        <rect key="frame" x="15" y="118" width="107" height="42"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="2Gq-eJ-Lmq"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="107" id="d5n-BF-aCb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionOk:" destination="wzy-ge-Ybx" eventType="touchUpInside" id="YwV-9C-zyu"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDm-ac-lR1">
+                                        <rect key="frame" x="55.5" y="118" width="150" height="42"/>
+                                        <color key="backgroundColor" red="0.21176470589999999" green="0.72549019609999998" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="4kO-F1-1Y2"/>
+                                            <constraint firstAttribute="height" constant="42" id="nv5-HY-cvS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionOk:" destination="wzy-ge-Ybx" eventType="touchUpInside" id="jfT-Cv-UA0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Something went wrong" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1A-4V-RIp">
+                                        <rect key="frame" x="10" y="69" width="242" height="14"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                        <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="OyJ-Yr-ahm" firstAttribute="leading" secondItem="4zl-qd-Ca8" secondAttribute="trailing" constant="7" id="7Vx-Om-BKh"/>
+                                    <constraint firstItem="OyJ-Yr-ahm" firstAttribute="top" secondItem="mmE-Iw-0ao" secondAttribute="top" constant="33" id="D5O-fl-NLw"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ieg-mF-6fQ" secondAttribute="bottom" constant="15" id="Dlo-fE-wwl"/>
+                                    <constraint firstItem="y1A-4V-RIp" firstAttribute="centerX" secondItem="mmE-Iw-0ao" secondAttribute="centerX" id="F5h-gO-Reb"/>
+                                    <constraint firstAttribute="width" constant="262" id="G9g-81-fsG"/>
+                                    <constraint firstItem="ZDm-ac-lR1" firstAttribute="centerX" secondItem="mmE-Iw-0ao" secondAttribute="centerX" id="HRF-Uo-7IC"/>
+                                    <constraint firstItem="Ieg-mF-6fQ" firstAttribute="centerY" secondItem="KOi-zg-3Ig" secondAttribute="centerY" id="Oef-iC-MNB"/>
+                                    <constraint firstAttribute="trailing" secondItem="y1A-4V-RIp" secondAttribute="trailing" constant="10" id="WdF-v6-qsl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ieg-mF-6fQ" secondAttribute="trailing" constant="15" id="jsd-x2-RrS"/>
+                                    <constraint firstItem="OyJ-Yr-ahm" firstAttribute="centerX" secondItem="mmE-Iw-0ao" secondAttribute="centerX" id="qOm-3z-Ouc"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZDm-ac-lR1" secondAttribute="bottom" constant="15" id="rGb-ZQ-BZc"/>
+                                    <constraint firstItem="4zl-qd-Ca8" firstAttribute="centerY" secondItem="OyJ-Yr-ahm" secondAttribute="centerY" constant="-2" id="rjc-3b-r5P"/>
+                                    <constraint firstItem="KOi-zg-3Ig" firstAttribute="leading" secondItem="mmE-Iw-0ao" secondAttribute="leading" constant="15" id="rlQ-tg-6uN"/>
+                                    <constraint firstItem="ZDm-ac-lR1" firstAttribute="top" secondItem="y1A-4V-RIp" secondAttribute="bottom" constant="35" id="sLR-Uq-czI"/>
+                                    <constraint firstItem="Ieg-mF-6fQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="KOi-zg-3Ig" secondAttribute="trailing" constant="10" id="ua7-pK-r5j"/>
+                                    <constraint firstItem="y1A-4V-RIp" firstAttribute="top" secondItem="OyJ-Yr-ahm" secondAttribute="bottom" constant="15" id="x29-xU-Lht"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mmE-Iw-0ao" firstAttribute="centerX" secondItem="PqG-eE-mfj" secondAttribute="centerX" id="F5a-l6-wS7"/>
+                            <constraint firstAttribute="trailing" secondItem="2Aj-B7-1HY" secondAttribute="trailing" id="HXx-Y4-TNt"/>
+                            <constraint firstItem="2Aj-B7-1HY" firstAttribute="leading" secondItem="PqG-eE-mfj" secondAttribute="leading" id="IbK-Mw-XfH"/>
+                            <constraint firstItem="TPm-8V-4B1" firstAttribute="top" secondItem="2Aj-B7-1HY" secondAttribute="bottom" id="fEk-NJ-KCR"/>
+                            <constraint firstItem="2Aj-B7-1HY" firstAttribute="top" secondItem="PqG-eE-mfj" secondAttribute="top" id="nX9-lu-7YQ"/>
+                            <constraint firstItem="mmE-Iw-0ao" firstAttribute="centerY" secondItem="PqG-eE-mfj" secondAttribute="centerY" multiplier="0.7" id="yfH-GC-tbF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="Ieg-mF-6fQ" id="R62-ey-4w4"/>
+                        <outlet property="centerOkButton" destination="ZDm-ac-lR1" id="UpI-BZ-nzm"/>
+                        <outlet property="messageLabel" destination="y1A-4V-RIp" id="Owp-Up-XwT"/>
+                        <outlet property="okButton" destination="KOi-zg-3Ig" id="Seu-xp-Sya"/>
+                        <outlet property="titleLabel" destination="OyJ-Yr-ahm" id="OMH-lm-XWy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mnw-dJ-wSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946.39999999999998" y="142.57871064467767"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic-error" width="26" height="22"/>
+        <image name="ic-error-popup" width="18" height="18"/>
+    </resources>
+</document>

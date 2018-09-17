@@ -1,0 +1,53 @@
+//
+//  ErrorPopUpViewController.m
+//  qtum wallet
+//
+//  Created by Sharaev Vladimir on 03.06.17.
+//  Copyright © 2017 QTUM. All rights reserved.
+//
+
+#import "ErrorPopUpViewController.h"
+
+@interface ErrorPopUpViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *messageLabel;
+@property (weak, nonatomic) IBOutlet UIButton *cancelButton;
+@property (weak, nonatomic) IBOutlet UIButton *okButton;
+@property (weak, nonatomic) IBOutlet UIButton *centerOkButton;
+
+@end
+
+@implementation ErrorPopUpViewController
+
+- (void)viewDidLoad {
+	[super viewDidLoad];
+
+	PopUpContent *content = [self content];
+	self.titleLabel.text = content.titleString;
+	self.messageLabel.text = content.messageString;
+	[self.okButton setTitle:content.okButtonTitle forState:UIControlStateNormal];
+	[self.centerOkButton setTitle:content.okButtonTitle forState:UIControlStateNormal];
+	[self.cancelButton setTitle:content.cancelButtonTitle forState:UIControlStateNormal];
+}
+
+- (IBAction)actionOk:(id) sender {
+	if ([self.delegate respondsToSelector:@selector (okButtonPressed:)]) {
+		[self.delegate okButtonPressed:self];
+	}
+}
+
+- (IBAction)actionCancel:(id) sender {
+	if ([self.delegate respondsToSelector:@selector (cancelButtonPressed:)]) {
+		[self.delegate cancelButtonPressed:self];
+	}
+}
+
+- (void)setOnlyCancelButton {
+
+	self.cancelButton.hidden = YES;
+	self.okButton.hidden = YES;
+	self.centerOkButton.hidden = NO;
+}
+
+@end

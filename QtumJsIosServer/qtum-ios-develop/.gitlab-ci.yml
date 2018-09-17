@@ -1,0 +1,43 @@
+stages:
+  - unit_tests
+  - build
+
+variables:
+  LC_ALL: "en_US.UTF-8"
+  LANG: "en_US.UTF-8"
+
+before_script:
+  - unlock_ci_keychain.sh
+  - echo $SETTINGS_URL
+  - get_env_settings.sh $SETTINGS_URL $SETTINGS_BRANCH_MAINNET
+  - gem install bundler
+  - bundle install
+
+unit_tests:
+  dependencies: []
+  stage: unit_tests
+  artifacts:
+    paths:
+      - fastlane/test_output
+  script:
+    - fastlane tests
+  tags:
+    - ios
+
+build:
+  dependencies: []
+  stage: build
+  environment:
+   name: testnet
+  artifacts:
+    paths:
+      - fastlane/logs
+      - fastlane/build
+  script:
+    - get_env_settings.sh $SETTINGS_URL $SETTINGS_BRANCH_TESTNET
+    - fastlane beta_testnet
+  tags:
+    - ios
+  only:
+     - /^release-.*$/
+     - master

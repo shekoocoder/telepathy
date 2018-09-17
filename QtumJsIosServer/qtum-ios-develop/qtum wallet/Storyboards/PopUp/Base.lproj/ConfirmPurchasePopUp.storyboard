@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="euclidflexmedium.ttf">
+            <string>euclidflexmedium</string>
+        </array>
+        <array key="proximanova-regular.otf">
+            <string>ProximaNova-Regular</string>
+        </array>
+        <array key="proximanova-semibold.otf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+        <array key="simplonmono-medium.ttf">
+            <string>simplonmono-medium</string>
+        </array>
+        <array key="simplonmono-regular.ttf">
+            <string>simplonmono-regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Confirm Purchase Pop Up View Controller Dark-->
+        <scene sceneID="Ua8-WT-NoI">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmPurchasePopUpViewControllerDark" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vpw-sp-m3m" customClass="ConfirmPurchasePopUpViewControllerDark" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rAY-QU-IG2"/>
+                        <viewControllerLayoutGuide type="bottom" id="L9c-3Y-aJu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wUa-0G-cp1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Hb-o8-9EB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ox-Y3-1Ck">
+                                <rect key="frame" x="30" y="85" width="315" height="365"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Purchase" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEV-Uu-5k2">
+                                        <rect key="frame" x="20" y="35" width="275" height="18"/>
+                                        <fontDescription key="fontDescription" name="simplonmono-medium" family="simplonmono" pointSize="15"/>
+                                        <color key="textColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75l-PO-DUc">
+                                        <rect key="frame" x="157.5" y="314" width="157.5" height="31"/>
+                                        <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="16"/>
+                                        <state key="normal" title="CONFIRM">
+                                            <color key="titleColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionConfirm:" destination="Vpw-sp-m3m" eventType="touchUpInside" id="gPr-fb-xWX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNO-9e-zjt">
+                                        <rect key="frame" x="0.0" y="314" width="157.5" height="31"/>
+                                        <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="16"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="actionCancel:" destination="Vpw-sp-m3m" eventType="touchUpInside" id="lal-cU-Ate"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contract Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOP-77-9Rv">
+                                        <rect key="frame" x="30" y="86" width="255" height="14"/>
+                                        <fontDescription key="fontDescription" name="euclidflexmedium" family="euclidflexmedium" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Contract" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLo-ct-Hps">
+                                        <rect key="frame" x="30" y="102" width="255" height="14"/>
+                                        <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contract Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fU-71-jLW">
+                                        <rect key="frame" x="30" y="125" width="255" height="14"/>
+                                        <fontDescription key="fontDescription" name="euclidflexmedium" family="euclidflexmedium" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BU9-T8-fEG">
+                                        <rect key="frame" x="30" y="141" width="255" height="14"/>
+                                        <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.2 QTUM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7xp-VU-EEp">
+                                        <rect key="frame" x="30" y="180" width="255" height="14"/>
+                                        <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miner Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQr-Ts-G95">
+                                        <rect key="frame" x="30" y="203" width="255" height="14"/>
+                                        <fontDescription key="fontDescription" name="euclidflexmedium" family="euclidflexmedium" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45d78cb12x8erq34212x3vfs8d64" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5a-tz-CeV">
+                                        <rect key="frame" x="30" y="219" width="255" height="14"/>
+                                        <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fee:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydH-PD-ygK">
+                                        <rect key="frame" x="30" y="242" width="255" height="14"/>
+                                        <fontDescription key="fontDescription" name="euclidflexmedium" family="euclidflexmedium" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0001 QTUM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t11-oH-L5d">
+                                        <rect key="frame" x="30" y="258" width="255" height="14"/>
+                                        <fontDescription key="fontDescription" name="simplonmono-regular" family="simplonmono" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18039215689999999" green="0.60392156860000001" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NOP-77-9Rv" secondAttribute="trailing" constant="30" id="1EC-eU-D8G"/>
+                                    <constraint firstItem="cLo-ct-Hps" firstAttribute="top" secondItem="NOP-77-9Rv" secondAttribute="bottom" constant="2" id="2ZE-WD-GvH"/>
+                                    <constraint firstItem="75l-PO-DUc" firstAttribute="leading" secondItem="YNO-9e-zjt" secondAttribute="trailing" id="2d9-Cp-NFt"/>
+                                    <constraint firstItem="cQr-Ts-G95" firstAttribute="top" secondItem="7xp-VU-EEp" secondAttribute="bottom" constant="9" id="4gr-QO-cZo"/>
+                                    <constraint firstItem="LEV-Uu-5k2" firstAttribute="top" secondItem="3ox-Y3-1Ck" secondAttribute="top" constant="35" id="5V6-Vg-d0J"/>
+                                    <constraint firstItem="cQr-Ts-G95" firstAttribute="leading" secondItem="7xp-VU-EEp" secondAttribute="leading" id="5tB-dP-qfC"/>
+                                    <constraint firstItem="s5a-tz-CeV" firstAttribute="trailing" secondItem="cQr-Ts-G95" secondAttribute="trailing" id="60x-FB-RHv"/>
+                                    <constraint firstItem="LEV-Uu-5k2" firstAttribute="leading" secondItem="3ox-Y3-1Ck" secondAttribute="leading" constant="20" id="66C-3a-78u"/>
+                                    <constraint firstItem="s5a-tz-CeV" firstAttribute="top" secondItem="cQr-Ts-G95" secondAttribute="bottom" constant="2" id="9VJ-UR-w3O"/>
+                                    <constraint firstAttribute="trailing" secondItem="LEV-Uu-5k2" secondAttribute="trailing" constant="20" id="BWu-wQ-lWi"/>
+                                    <constraint firstItem="BU9-T8-fEG" firstAttribute="top" secondItem="8fU-71-jLW" secondAttribute="bottom" constant="2" id="DI6-09-yC3"/>
+                                    <constraint firstItem="8fU-71-jLW" firstAttribute="leading" secondItem="cLo-ct-Hps" secondAttribute="leading" id="FOO-VA-VX0"/>
+                                    <constraint firstItem="t11-oH-L5d" firstAttribute="top" secondItem="ydH-PD-ygK" secondAttribute="bottom" constant="2" id="J2R-EB-CPe"/>
+                                    <constraint firstItem="75l-PO-DUc" firstAttribute="top" secondItem="t11-oH-L5d" secondAttribute="bottom" constant="42" id="JRK-hx-qTO"/>
+                                    <constraint firstItem="s5a-tz-CeV" firstAttribute="leading" secondItem="cQr-Ts-G95" secondAttribute="leading" id="Noz-QN-AWg"/>
+                                    <constraint firstItem="cLo-ct-Hps" firstAttribute="leading" secondItem="NOP-77-9Rv" secondAttribute="leading" id="NxU-Er-Yk7"/>
+                                    <constraint firstAttribute="trailing" secondItem="75l-PO-DUc" secondAttribute="trailing" id="T4z-dM-8z7"/>
+                                    <constraint firstItem="YNO-9e-zjt" firstAttribute="centerY" secondItem="75l-PO-DUc" secondAttribute="centerY" id="TJr-ME-67V"/>
+                                    <constraint firstItem="NOP-77-9Rv" firstAttribute="top" secondItem="LEV-Uu-5k2" secondAttribute="bottom" constant="33" id="Uix-wX-T5k"/>
+                                    <constraint firstItem="LEV-Uu-5k2" firstAttribute="centerX" secondItem="3ox-Y3-1Ck" secondAttribute="centerX" id="WfD-wI-xid"/>
+                                    <constraint firstItem="ydH-PD-ygK" firstAttribute="trailing" secondItem="s5a-tz-CeV" secondAttribute="trailing" id="Y1P-rC-da4"/>
+                                    <constraint firstItem="BU9-T8-fEG" firstAttribute="leading" secondItem="8fU-71-jLW" secondAttribute="leading" id="ZJB-wZ-dxt"/>
+                                    <constraint firstItem="t11-oH-L5d" firstAttribute="leading" secondItem="ydH-PD-ygK" secondAttribute="leading" id="aIw-48-2yP"/>
+                                    <constraint firstItem="YNO-9e-zjt" firstAttribute="width" secondItem="75l-PO-DUc" secondAttribute="width" id="agB-dK-aTE"/>
+                                    <constraint firstItem="cQr-Ts-G95" firstAttribute="trailing" secondItem="7xp-VU-EEp" secondAttribute="trailing" id="dlx-Ka-2qu"/>
+                                    <constraint firstItem="t11-oH-L5d" firstAttribute="trailing" secondItem="ydH-PD-ygK" secondAttribute="trailing" id="ftR-Kv-K6O"/>
+                                    <constraint firstItem="ydH-PD-ygK" firstAttribute="leading" secondItem="s5a-tz-CeV" secondAttribute="leading" id="gDg-hi-SF8"/>
+                                    <constraint firstItem="cLo-ct-Hps" firstAttribute="trailing" secondItem="NOP-77-9Rv" secondAttribute="trailing" id="kiV-IW-lsX"/>
+                                    <constraint firstItem="YNO-9e-zjt" firstAttribute="leading" secondItem="3ox-Y3-1Ck" secondAttribute="leading" id="mXK-jF-HhI"/>
+                                    <constraint firstItem="NOP-77-9Rv" firstAttribute="leading" secondItem="3ox-Y3-1Ck" secondAttribute="leading" constant="30" id="oXf-0g-SaF"/>
+                                    <constraint firstItem="8fU-71-jLW" firstAttribute="top" secondItem="cLo-ct-Hps" secondAttribute="bottom" constant="9" id="rAb-Mh-rcQ"/>
+                                    <constraint firstItem="BU9-T8-fEG" firstAttribute="trailing" secondItem="8fU-71-jLW" secondAttribute="trailing" id="sDl-Uw-Gwh"/>
+                                    <constraint firstItem="ydH-PD-ygK" firstAttribute="top" secondItem="s5a-tz-CeV" secondAttribute="bottom" constant="9" id="t3E-cC-aWA"/>
+                                    <constraint firstItem="8fU-71-jLW" firstAttribute="trailing" secondItem="cLo-ct-Hps" secondAttribute="trailing" id="t9D-m9-gil"/>
+                                    <constraint firstAttribute="bottom" secondItem="75l-PO-DUc" secondAttribute="bottom" constant="20" id="v45-bl-xkF"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztp-Zv-0B8">
+                                <rect key="frame" x="60" y="249" width="255" height="14"/>
+                                <fontDescription key="fontDescription" name="euclidflexmedium" family="euclidflexmedium" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Hb-o8-9EB" firstAttribute="leading" secondItem="wUa-0G-cp1" secondAttribute="leading" id="0Qw-TE-ehZ"/>
+                            <constraint firstAttribute="trailing" secondItem="0Hb-o8-9EB" secondAttribute="trailing" id="1eb-oU-vzh"/>
+                            <constraint firstItem="ztp-Zv-0B8" firstAttribute="top" secondItem="BU9-T8-fEG" secondAttribute="bottom" constant="9" id="1zR-95-DJR"/>
+                            <constraint firstItem="7xp-VU-EEp" firstAttribute="trailing" secondItem="ztp-Zv-0B8" secondAttribute="trailing" id="4Uc-Io-OaG"/>
+                            <constraint firstItem="3ox-Y3-1Ck" firstAttribute="leading" secondItem="wUa-0G-cp1" secondAttribute="leading" constant="30" id="88C-Cc-1ej"/>
+                            <constraint firstItem="ztp-Zv-0B8" firstAttribute="trailing" secondItem="BU9-T8-fEG" secondAttribute="trailing" id="ETg-rX-Yi6"/>
+                            <constraint firstItem="7xp-VU-EEp" firstAttribute="leading" secondItem="ztp-Zv-0B8" secondAttribute="leading" id="EnF-fN-dqA"/>
+                            <constraint firstAttribute="trailing" secondItem="3ox-Y3-1Ck" secondAttribute="trailing" constant="30" id="Jdx-R6-8zy"/>
+                            <constraint firstItem="3ox-Y3-1Ck" firstAttribute="centerX" secondItem="wUa-0G-cp1" secondAttribute="centerX" id="N4d-FR-dvC"/>
+                            <constraint firstItem="0Hb-o8-9EB" firstAttribute="top" secondItem="wUa-0G-cp1" secondAttribute="top" id="Sai-1O-irV"/>
+                            <constraint firstItem="7xp-VU-EEp" firstAttribute="top" secondItem="ztp-Zv-0B8" secondAttribute="bottom" constant="2" id="V2b-Py-NA0"/>
+                            <constraint firstItem="3ox-Y3-1Ck" firstAttribute="centerY" secondItem="wUa-0G-cp1" secondAttribute="centerY" multiplier="0.8" id="kzp-E7-Jjv"/>
+                            <constraint firstItem="ztp-Zv-0B8" firstAttribute="leading" secondItem="BU9-T8-fEG" secondAttribute="leading" id="m4U-tZ-1Oz"/>
+                            <constraint firstItem="L9c-3Y-aJu" firstAttribute="top" secondItem="0Hb-o8-9EB" secondAttribute="bottom" id="zDG-ru-8XZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountLabel" destination="7xp-VU-EEp" id="UVw-ux-H9M"/>
+                        <outlet property="cancelButton" destination="YNO-9e-zjt" id="aPS-dE-4C3"/>
+                        <outlet property="confirmButton" destination="75l-PO-DUc" id="4ZU-56-fJg"/>
+                        <outlet property="contractNameLabel" destination="cLo-ct-Hps" id="Lgs-0T-uK7"/>
+                        <outlet property="contractNameTextLabel" destination="NOP-77-9Rv" id="PPi-XE-m0f"/>
+                        <outlet property="contractTypeLabel" destination="BU9-T8-fEG" id="cZK-e4-Yj2"/>
+                        <outlet property="contractTypeTextLabel" destination="8fU-71-jLW" id="t5z-S2-dXb"/>
+                        <outlet property="feeLabel" destination="t11-oH-L5d" id="aKB-sm-hZ8"/>
+                        <outlet property="feeTextLabel" destination="ydH-PD-ygK" id="hGp-sU-owI"/>
+                        <outlet property="minerAddressTextLabel" destination="cQr-Ts-G95" id="fp6-GX-fGV"/>
+                        <outlet property="minterAddressLabel" destination="s5a-tz-CeV" id="mw9-Hq-MnF"/>
+                        <outlet property="priceTextLabel" destination="ztp-Zv-0B8" id="ONh-fS-0tO"/>
+                        <outlet property="titleLabel" destination="LEV-Uu-5k2" id="o3A-5s-ril"/>
+                        <outlet property="titleTextLabel" destination="LEV-Uu-5k2" id="DMw-bs-iwU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tGw-2z-gFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-119" y="119"/>
+        </scene>
+        <!--Confirm Purchase Pop Up View Controller Light-->
+        <scene sceneID="gwb-bE-DhS">
+            <objects>
+                <viewController storyboardIdentifier="ConfirmPurchasePopUpViewControllerLight" definesPresentationContext="YES" providesPresentationContextTransitionStyle="YES" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z2f-OE-KW7" customClass="ConfirmPurchasePopUpViewControllerLight" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UTy-wc-TL4"/>
+                        <viewControllerLayoutGuide type="bottom" id="LRg-7G-pih"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ek9-dw-hdW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9B-JI-vcC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eL-3F-x2g">
+                                <rect key="frame" x="57.5" y="117" width="260" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Purchase" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5GV-WW-MWo">
+                                        <rect key="frame" x="0.0" y="23" width="260" height="21"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="18"/>
+                                        <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iby-sO-8JC">
+                                        <rect key="frame" x="15" y="244" width="110" height="40"/>
+                                        <color key="backgroundColor" red="0.93725490199999995" green="0.94901960780000005" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="h36-Fh-YwF"/>
+                                            <constraint firstAttribute="height" constant="40" id="xzM-A5-9vw"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                        <state key="normal" title="CANCEL">
+                                            <color key="titleColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionCancel:" destination="Z2f-OE-KW7" eventType="touchUpInside" id="SY4-mI-MaB"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contract Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waz-kC-iZK">
+                                        <rect key="frame" x="18" y="78.5" width="232" height="14"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                        <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Contract" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zqx-hx-3eP">
+                                        <rect key="frame" x="18" y="59" width="232" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                        <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contract Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDa-9N-4gM">
+                                        <rect key="frame" x="18" y="127" width="242" height="14"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                        <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Contact" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJr-Yp-0J5">
+                                        <rect key="frame" x="18" y="107.5" width="232" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                        <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.2 QTUM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hL-eC-goq">
+                                        <rect key="frame" x="160.5" y="205" width="69" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                        <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Miner Address:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1S-xB-nbS">
+                                        <rect key="frame" x="18" y="175.5" width="242" height="14"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                        <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45d78cb12x8erq34212x3vfs8d64" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpE-c2-KfT">
+                                        <rect key="frame" x="18" y="156" width="232" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                        <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ciT-RF-Gd0">
+                                        <rect key="frame" x="180" y="224.5" width="31" height="14"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                        <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fee:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PyY-qX-5xl">
+                                        <rect key="frame" x="53.5" y="224.5" width="23" height="14"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="12"/>
+                                        <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0001 QTUM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clE-6A-u2L">
+                                        <rect key="frame" x="17.5" y="205" width="94" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                        <color key="textColor" red="0.30588235289999999" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vUG-9T-t2F">
+                                        <rect key="frame" x="135" y="244" width="110" height="40"/>
+                                        <color key="backgroundColor" red="0.21176470589999999" green="0.72549019609999998" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="4Q6-eX-Gpo"/>
+                                            <constraint firstAttribute="width" constant="110" id="6Vt-sR-KoR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                        <state key="normal" title="CONFIRM">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="actionConfirm:" destination="Z2f-OE-KW7" eventType="touchUpInside" id="z7Q-MT-QTH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Zqx-hx-3eP" secondAttribute="trailing" constant="10" id="2Ft-Cm-lpR"/>
+                                    <constraint firstItem="PyY-qX-5xl" firstAttribute="centerY" secondItem="ciT-RF-Gd0" secondAttribute="centerY" id="3vJ-x9-2Nr"/>
+                                    <constraint firstItem="Iby-sO-8JC" firstAttribute="centerY" secondItem="vUG-9T-t2F" secondAttribute="centerY" id="6TX-5B-rfl"/>
+                                    <constraint firstItem="PyY-qX-5xl" firstAttribute="centerX" secondItem="4eL-3F-x2g" secondAttribute="centerX" multiplier="0.5" id="8Wn-s6-kjq"/>
+                                    <constraint firstItem="5GV-WW-MWo" firstAttribute="top" secondItem="4eL-3F-x2g" secondAttribute="top" constant="23" id="93Q-5m-WMo"/>
+                                    <constraint firstItem="YpE-c2-KfT" firstAttribute="top" secondItem="uDa-9N-4gM" secondAttribute="bottom" constant="15" id="9Pv-mr-ldh"/>
+                                    <constraint firstAttribute="trailing" secondItem="YpE-c2-KfT" secondAttribute="trailing" constant="10" id="9q4-Kc-X1k"/>
+                                    <constraint firstItem="uDa-9N-4gM" firstAttribute="top" secondItem="ZJr-Yp-0J5" secondAttribute="bottom" constant="2" id="A5q-qF-Uer"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZJr-Yp-0J5" secondAttribute="trailing" constant="10" id="CA3-SN-eOC"/>
+                                    <constraint firstItem="vUG-9T-t2F" firstAttribute="leading" secondItem="Iby-sO-8JC" secondAttribute="trailing" constant="10" id="CXo-ac-ajU"/>
+                                    <constraint firstItem="clE-6A-u2L" firstAttribute="centerX" secondItem="PyY-qX-5xl" secondAttribute="centerX" id="Dub-4l-EMS"/>
+                                    <constraint firstItem="5hL-eC-goq" firstAttribute="centerX" secondItem="ciT-RF-Gd0" secondAttribute="centerX" id="E33-w5-68P"/>
+                                    <constraint firstItem="ZJr-Yp-0J5" firstAttribute="top" secondItem="waz-kC-iZK" secondAttribute="bottom" constant="15" id="PQr-Dx-k1q"/>
+                                    <constraint firstItem="ZJr-Yp-0J5" firstAttribute="leading" secondItem="4eL-3F-x2g" secondAttribute="leading" constant="18" id="Qce-gP-VWT"/>
+                                    <constraint firstItem="ciT-RF-Gd0" firstAttribute="centerX" secondItem="4eL-3F-x2g" secondAttribute="centerX" multiplier="1.5" id="RsZ-Ol-2LW"/>
+                                    <constraint firstItem="PyY-qX-5xl" firstAttribute="top" secondItem="d1S-xB-nbS" secondAttribute="bottom" constant="35" id="SUy-ub-RNp"/>
+                                    <constraint firstItem="Zqx-hx-3eP" firstAttribute="top" secondItem="5GV-WW-MWo" secondAttribute="bottom" constant="15" id="UD2-vt-TsU"/>
+                                    <constraint firstAttribute="trailing" secondItem="d1S-xB-nbS" secondAttribute="trailing" id="UK0-4w-uDY"/>
+                                    <constraint firstAttribute="height" constant="300" id="W6W-Jp-Oh1"/>
+                                    <constraint firstAttribute="width" constant="260" id="Z7q-xV-UMS"/>
+                                    <constraint firstAttribute="trailing" secondItem="5GV-WW-MWo" secondAttribute="trailing" id="bmW-jO-g9p"/>
+                                    <constraint firstItem="clE-6A-u2L" firstAttribute="centerY" secondItem="5hL-eC-goq" secondAttribute="centerY" id="ehU-mC-m8h"/>
+                                    <constraint firstItem="d1S-xB-nbS" firstAttribute="top" secondItem="YpE-c2-KfT" secondAttribute="bottom" constant="2" id="eni-6y-EiW"/>
+                                    <constraint firstItem="PyY-qX-5xl" firstAttribute="top" secondItem="clE-6A-u2L" secondAttribute="bottom" constant="2" id="fYY-wD-TMp"/>
+                                    <constraint firstItem="waz-kC-iZK" firstAttribute="leading" secondItem="4eL-3F-x2g" secondAttribute="leading" constant="18" id="iTY-oe-ssi"/>
+                                    <constraint firstItem="5GV-WW-MWo" firstAttribute="leading" secondItem="4eL-3F-x2g" secondAttribute="leading" id="ij5-Pi-e85"/>
+                                    <constraint firstItem="d1S-xB-nbS" firstAttribute="leading" secondItem="4eL-3F-x2g" secondAttribute="leading" constant="18" id="k2b-rf-Vg8"/>
+                                    <constraint firstItem="waz-kC-iZK" firstAttribute="top" secondItem="Zqx-hx-3eP" secondAttribute="bottom" constant="2" id="mwh-78-YuT"/>
+                                    <constraint firstAttribute="bottom" secondItem="vUG-9T-t2F" secondAttribute="bottom" constant="16" id="nIO-BI-I8D"/>
+                                    <constraint firstItem="Zqx-hx-3eP" firstAttribute="leading" secondItem="4eL-3F-x2g" secondAttribute="leading" constant="18" id="p9d-6m-OoV"/>
+                                    <constraint firstAttribute="trailing" secondItem="uDa-9N-4gM" secondAttribute="trailing" id="qBC-n0-Oh7"/>
+                                    <constraint firstAttribute="trailing" secondItem="waz-kC-iZK" secondAttribute="trailing" constant="10" id="sVm-cW-jA6"/>
+                                    <constraint firstItem="Iby-sO-8JC" firstAttribute="centerX" secondItem="4eL-3F-x2g" secondAttribute="centerX" constant="-60" id="uTX-uF-oZE"/>
+                                    <constraint firstItem="YpE-c2-KfT" firstAttribute="leading" secondItem="4eL-3F-x2g" secondAttribute="leading" constant="18" id="uYD-ac-QdZ"/>
+                                    <constraint firstItem="5hL-eC-goq" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="clE-6A-u2L" secondAttribute="trailing" constant="5" id="xkO-zz-XFD"/>
+                                    <constraint firstItem="uDa-9N-4gM" firstAttribute="leading" secondItem="4eL-3F-x2g" secondAttribute="leading" constant="18" id="zA9-z2-2VZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="e9B-JI-vcC" firstAttribute="leading" secondItem="ek9-dw-hdW" secondAttribute="leading" id="CoI-6B-2rv"/>
+                            <constraint firstItem="e9B-JI-vcC" firstAttribute="top" secondItem="ek9-dw-hdW" secondAttribute="top" id="Oz8-hc-82B"/>
+                            <constraint firstAttribute="trailing" secondItem="e9B-JI-vcC" secondAttribute="trailing" id="Z7e-Zx-Xov"/>
+                            <constraint firstItem="4eL-3F-x2g" firstAttribute="centerX" secondItem="ek9-dw-hdW" secondAttribute="centerX" id="gwI-iw-F6L"/>
+                            <constraint firstItem="4eL-3F-x2g" firstAttribute="centerY" secondItem="ek9-dw-hdW" secondAttribute="centerY" multiplier="0.8" id="had-V7-VLl"/>
+                            <constraint firstItem="LRg-7G-pih" firstAttribute="top" secondItem="e9B-JI-vcC" secondAttribute="bottom" id="ofN-zg-fsT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountLabel" destination="5hL-eC-goq" id="Dwf-xi-wR0"/>
+                        <outlet property="cancelButton" destination="Iby-sO-8JC" id="tcw-Wl-4Nh"/>
+                        <outlet property="confirmButton" destination="vUG-9T-t2F" id="APT-d9-anc"/>
+                        <outlet property="contractNameLabel" destination="Zqx-hx-3eP" id="bDB-eV-JOd"/>
+                        <outlet property="contractNameTextLabel" destination="waz-kC-iZK" id="35Q-Hz-pxb"/>
+                        <outlet property="contractTypeLabel" destination="ZJr-Yp-0J5" id="Nbx-YD-tIh"/>
+                        <outlet property="contractTypeTextLabel" destination="uDa-9N-4gM" id="uZl-MH-X8J"/>
+                        <outlet property="feeLabel" destination="clE-6A-u2L" id="JHN-hj-Ncs"/>
+                        <outlet property="feeTextLabel" destination="PyY-qX-5xl" id="h6m-AK-Cox"/>
+                        <outlet property="minerAddressTextLabel" destination="d1S-xB-nbS" id="FlT-sl-SD3"/>
+                        <outlet property="minterAddressLabel" destination="YpE-c2-KfT" id="0C1-ny-Xbe"/>
+                        <outlet property="priceTextLabel" destination="ciT-RF-Gd0" id="F69-9Z-0Re"/>
+                        <outlet property="titleLabel" destination="5GV-WW-MWo" id="wK3-He-fco"/>
+                        <outlet property="titleTextLabel" destination="5GV-WW-MWo" id="xaT-Bb-tj1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kz6-Yv-ayc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541.60000000000002" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,109 @@
+
+<div class="panel-header panel-header-sm">
+    </div>
+    <div class="main-content">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card">
+            <div class="card-header">
+              <h5 class="title">Publishers</h5>
+            </div>
+            <div class="card-body">
+              <form>
+                    <div *ngIf="session">
+                            <app-publisher [session]="session"></app-publisher>
+                    </div>
+
+                    <div class="col-md-8">
+                            <div class="card card-user">                              
+                              <div class="card-body">
+                                <div class="author">
+                                  <a href="#">
+                                    <img class="image border-gray" src="../assets/img/tamiflu.jpg" alt="...">
+                                    <h5 class="title">Telepathy Recommendations</h5>
+                                  </a>
+                                  <p class="description">
+                                    Tamiflu
+                                  </p>
+                                </div>
+                                <p class="description text-center">
+                                  "Plenty of Rest, 
+                                  <br> Warm water with honey
+                                  <br> Tea, avoid Coffee with medicine."
+                                </p>
+                              </div>
+                              <hr>
+                              <div class="button-container">
+                                <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                                   Labs
+                                </button>
+                                <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                                   History
+                                </button>
+                                <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                                  Rx
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-user">
+            <div class="image">
+              <img src="../assets/img/bg5.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <div class="author">
+                <a href="#">
+                  <img class="avatar border-gray" src="../assets/img/patient.JPG" alt="...">
+                  <h5 class="title">Abhishek Gupta</h5>
+                </a>
+                <p class="description">
+                  New Patient
+                </p>
+              </div>
+              <p class="description text-center">
+                "I woke up couging, 
+                <br> had trouble breating
+                <br> Sore Throat too"
+              </p>
+            </div>
+            <hr>
+            <div class="button-container">
+              <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+              <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                <i class="fab fa-twitter"></i>
+              </button>
+              <button href="#" class="btn btn-neutral btn-icon btn-round btn-lg">
+                <i class="fab fa-google-plus-g"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+            <div class="col-md-8">
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="title">Subscribers</h5>
+                </div>
+                <div class="card-body">
+                  <form>
+                        <div *ngIf="session">
+                                 <app-subscriber *ngFor="let stream of streams" [stream]="stream" [session]="session"></app-subscriber>
+                        </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+    </div>
+    
